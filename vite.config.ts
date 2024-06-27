@@ -18,12 +18,12 @@ export default defineConfig({
     target: "esnext",
   },
   resolve: {
-    alias: [
-      { find: "components", replacement: "./src/components" },
-      { find: "constant", replacement: "./src/constant" },
-      { find: "context", replacement: "./src/context" },
-      { find: "hooks", replacement: "./src/hooks" },
-      { find: "types", replacement: "./src/types" },
-    ],
+    alias: {
+      components: "/src/components",
+      constant: "/src/constant",
+      context: "/src/context",
+      hooks: "/src/hooks",
+      types: "/src/types",
+    },
   },
 });
